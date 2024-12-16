@@ -1,10 +1,9 @@
 import time
 
 def kmp_pattern_search(text, pattern):
-    # Preprocess the pattern to create the longest prefix suffix (LPS) array
     def compute_lps(pattern):
         lps = [0] * len(pattern)
-        length = 0  # length of the previous longest prefix suffix
+        length = 0 
         i = 1
 
         while i < len(pattern):
